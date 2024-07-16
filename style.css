@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+}
+html{
+    font-family: "Orbitron", sans-serif;
+}
+:root{
+    --azul-texto:#caf2ff;
+    --azul-principal:#24c0eb;
+    --preto-fundo:#262525;
+    --bege-fundo:#b3aca4;
+}
+
+body{
+height: 100%;
+width: 100%;
+display: flex;
+background-color: var(--preto-fundo);
+align-items: center;
+flex-direction: column;
+margin-top: 5rem;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 4rem;
+}
+.titulo{
+    font-size: 6.25rem;
+    font-weight: 700;
+    color:var(--azul-principal);
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu__container{
+    display:flex;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    color:var(--azul-texto);
+}
+.tempo{
+    min-width: 5.6rem;
+    margin-right: 0.6rem;
+}
+.separar{
+    padding: 0 0.6rem;
+    color: var(--bege-fundo);
+}
+#milesimo{
+    font-size: 2rem;
+    color:var(--bege-fundo);
+}
+.botoes{
+    display: flex;
+    gap: 1rem;
+}
+.botoes button{
+    padding: 0.6rem 1.2rem;
+    margin: 2.5rem 0 0 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border:0.1rem solid var(--azul-principal);
+    background-color:var(--azul-texto);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+#inicio{
+    background-color: var(--azul-principal);
+    color: var(--azul-texto);
+}
+#pausa, #continua{
+    display: none;
+}
